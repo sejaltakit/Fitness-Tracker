@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fitness Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="tracker">
+    <h2>Fitness Tracker</h2>
+    <div class="input-group">
+      <label for="steps">Steps (Goal: 10000)</label>
+      <input type="number" id="steps" placeholder="Enter steps">
+    </div>
+    <div class="input-group">
+      <label for="water">Water (ml, Goal: 3000)</label>
+      <input type="number" id="water" placeholder="Enter water intake">
+    </div>
+    <div class="input-group">
+      <label for="calories">Calories Burned (Goal: 500)</label>
+      <input type="number" id="calories" placeholder="Enter calories burned">
+    </div>
+    <button onclick="updateProgress()">Update Progress</button>
+
+    <div class="progress-container">
+      <div class="progress-label">Steps</div>
+      <div class="progress-bar"><div id="stepsProgress" class="progress">0%</div></div>
+    </div>
+    <div class="progress-container">
+      <div class="progress-label">Water</div>
+      <div class="progress-bar"><div id="waterProgress" class="progress">0%</div></div>
+    </div>
+    <div class="progress-container">
+      <div class="progress-label">Calories</div>
+      <div class="progress-bar"><div id="caloriesProgress" class="progress">0%</div></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
